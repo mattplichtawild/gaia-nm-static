@@ -15,6 +15,6 @@
   "hero": {
     "headline": "Animals at Gaia ",
     "textline": "Gaia is home to over 30 animals rescued from farms and ranches. Many of these animals would have been killed had they not found a home here.",
-    "large": true
+    "large": false
   }
 }
