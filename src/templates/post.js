@@ -45,11 +45,6 @@ function Post(props) {
         label: "Draft",
       },
       {
-        label: "Date",
-        name: "rawFrontmatter.date",
-        component: "date",
-      },
-      {
         label: "Hero Image",
         name: "rawFrontmatter.hero.image",
         component: "image",
