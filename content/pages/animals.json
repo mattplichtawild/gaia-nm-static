@@ -1,0 +1,13 @@
+{
+  "title": "Animals",
+  "path": "/animals",
+  "blocks": [
+    {
+      "title": "Animal residents at Gaia",
+      "center": true,
+      "underline": true,
+      "_template": "TitleBlock",
+      "content": ""
+    }
+  ]
+}
