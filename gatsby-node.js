@@ -141,6 +141,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+      animals: allMarkdownRemark(
+        filter: { frontmatter: { path: { ne: null } } }
+      ) {
+        edges {
+          node {
+            published
+            frontmatter {
+              path
+              type
+              tags
+            }
+          }
+        }
+      }
       tags: settingsJson(
         fileRelativePath: { eq: "/content/settings/tags.json" }
       ) {

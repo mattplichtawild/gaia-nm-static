@@ -1,6 +1,8 @@
 {
   "title": "Animals",
   "path": "/animals",
+  "pageType": "list",
+  "listType": "animal",
   "blocks": [
     {
       "title": "Animal residents at Gaia",

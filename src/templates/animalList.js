@@ -15,7 +15,7 @@ import { TagsForm } from "../components/tags"
 import { Link } from "gatsby"
 import { PageLayout } from "../components/pageLayout"
 
-export default function List({ data, pageContext }) {
+export default function animalList({ data, pageContext }) {
   const [tags] = useLocalJsonForm(data.tags, TagsForm)
   const [page] = useLocalJsonForm(data.page, ListForm)
   const [authors] = useLocalJsonForm(data.authors, AuthorsForm)
@@ -31,8 +31,8 @@ export default function List({ data, pageContext }) {
   return (
     <PageLayout page={page}>
       <>
-        {data.posts &&
-          data.posts.edges.map((item) => {
+        {data.animals &&
+          data.animals.edges.map((item) => {
             return (
               <Paper article key={item.node.id}>
                 {item.node.frontmatter.draft && <DraftBadge>Draft</DraftBadge>}
@@ -102,7 +102,7 @@ export const pageQuery = graphql`
       rawJson
       fileRelativePath
     }
-    posts: allMarkdownRemark(
+    animals: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
         frontmatter: { type: { eq: $listType } }

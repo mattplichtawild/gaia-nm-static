@@ -20,7 +20,7 @@ import { PageLayout } from "../components/pageLayout"
 import { useAuthors } from "../components/useAuthors"
 import { useTags } from "../components/useTags"
 
-function Post(props) {
+function Animal(props) {
   const authors = useAuthors()
   const tags = useTags()
   const page = props.data.markdownRemark
@@ -116,7 +116,7 @@ function Post(props) {
   )
 }
 
-export default Post
+export default Animal
 
 export const postQuery = graphql`
   query($path: String!) {
