@@ -6,5 +6,6 @@ path: /animals/odin
 draft: false
 hero:
   image: ../images/goatstock.jpeg
+tags: []
 ---
 ## Odin
