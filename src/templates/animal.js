@@ -34,12 +34,6 @@ function Animal(props) {
         component: "text",
       },
       {
-        label: "Authors",
-        name: "rawFrontmatter.authors",
-        component: "authors",
-        authors: authors,
-      },
-      {
         name: "rawFrontmatter.draft",
         component: "toggle",
         label: "Draft",
@@ -79,15 +73,15 @@ function Animal(props) {
       <PageLayout page={data}>
         <Paper>
           <Meta>
-            <MetaSpan>{data.frontmatter.date}</MetaSpan>
-            {data.frontmatter.authors && data.frontmatter.authors.length > 0 && (
+            {/* <MetaSpan>{data.frontmatter.date}</MetaSpan> */}
+            {/* {data.frontmatter.authors && data.frontmatter.authors.length > 0 && (
               <MetaSpan>
                 <em>By</em>&nbsp;
                 <ListAuthors authorIDs={data.frontmatter.authors} />
               </MetaSpan>
-            )}
+            )} */}
             <MetaActions>
-              <Link to="/blog">← Back to Blog</Link>
+              <Link to="/animals">← Back to Animals</Link>
             </MetaActions>
           </Meta>
           <h1>
