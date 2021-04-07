@@ -141,20 +141,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
-      animals: allMarkdownRemark(
-        filter: { frontmatter: { path: { ne: null } } }
-      ) {
-        edges {
-          node {
-            published
-            frontmatter {
-              path
-              type
-              tags
-            }
-          }
-        }
-      }
+      
       tags: settingsJson(
         fileRelativePath: { eq: "/content/settings/tags.json" }
       ) {
@@ -190,8 +177,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   result.data.lists.edges.forEach(({ node }) => {
-    const listPageTemplate = path.resolve(`src/templates/list.js`)
     const listType = node.listType
+    // const listPageTemplate = path.resolve(`src/templates/list.js`)
+     
+    const listPageTemplate = () => {
+      switch(listType) {
+        case "post": 
+          return path.resolve(`src/templates/list.js`) 
+        case "animal":
+          return path.resolve(`src/templates/animalList.js`)
+      }
+    }
+  
     const allPosts = result.data.posts.edges
     const posts = allPosts.filter(
       (post) => post.node.frontmatter.type === listType
@@ -208,7 +205,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         path: isFirstPage
           ? node.path
           : `${String(node.path)}/${String(currentPage)}`,
-        component: listPageTemplate,
+        component: listPageTemplate(),
         context: {
           listType: listType,
           slug: slug,
