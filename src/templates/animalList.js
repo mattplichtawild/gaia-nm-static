@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import { useLocalJsonForm } from "gatsby-tinacms-json"
+import { usePlugin } from "tinacms"
+import { useJsonForm } from "gatsby-tinacms-json"
 
 import {
   Paper,
@@ -15,10 +17,16 @@ import { TagsForm } from "../components/tags"
 import { Link } from "gatsby"
 import { PageLayout } from "../components/pageLayout"
 
-export default function animalList({ data, pageContext }) {
+export default function AnimalList({ data, pageContext }) {
   const [tags] = useLocalJsonForm(data.tags, TagsForm)
-  const [page] = useLocalJsonForm(data.page, ListForm)
   const [authors] = useLocalJsonForm(data.authors, AuthorsForm)
+
+  const [page] = useLocalJsonForm(data.page, ListForm)
+
+//   const [ page, form] = useJsonForm({ data, pageContext })
+
+//   usePlugin(form)
+
 
   const { slug, limit, skip, numPages, currentPage } = pageContext
   const isFirst = currentPage === 1
@@ -31,8 +39,8 @@ export default function animalList({ data, pageContext }) {
   return (
     <PageLayout page={page}>
       <>
-        {data.animals &&
-          data.animals.edges.map((item) => {
+        {data.posts &&
+          data.posts.edges.map((item) => {
             return (
               <Paper article key={item.node.id}>
                 {item.node.frontmatter.draft && <DraftBadge>Draft</DraftBadge>}
@@ -43,15 +51,15 @@ export default function animalList({ data, pageContext }) {
                 </h2>
                 <p>{item.node.excerpt}</p>
                 <Meta>
-                  <MetaSpan>{item.node.frontmatter.date}</MetaSpan>
-                  {item.node.frontmatter.authors && (
+                  {/* <MetaSpan>{item.node.frontmatter.date}</MetaSpan> */}
+                  {/* {item.node.frontmatter.authors && (
                     <MetaSpan>
                       <em>By</em>&nbsp;
                       <ListAuthors authorIDs={item.node.frontmatter.authors} />
                     </MetaSpan>
-                  )}
+                  )} */}
                   <MetaActions>
-                    <Link to={item.node.frontmatter.path}>Read Article →</Link>
+                    <Link to={item.node.frontmatter.path}>See More →</Link>
                   </MetaActions>
                 </Meta>
               </Paper>
@@ -102,7 +110,7 @@ export const pageQuery = graphql`
       rawJson
       fileRelativePath
     }
-    animals: allMarkdownRemark(
+    posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
         frontmatter: { type: { eq: $listType } }
