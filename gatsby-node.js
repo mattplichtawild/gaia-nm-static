@@ -167,11 +167,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   result.data.posts.edges.forEach(({ node }) => {
+    const pageTemplate = () => {
+      switch(node.frontmatter.type) {
+        case "post":
+          return path.resolve(`src/templates/post.js`)
+        case "animal":
+          return path.resolve(`src/templates/animal.js`)
+        default:
+          return path.resolve(`src/templates/post.js`)
+      }
+    }
+
     if (!node.published) return
 
     createPage({
       path: node.frontmatter.path,
-      component: path.resolve(`src/templates/post.js`),
+      component: pageTemplate(),
       context: {},
     })
   })
