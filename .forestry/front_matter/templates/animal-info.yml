@@ -1,0 +1,29 @@
+---
+label: Animal Info
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: type
+  label: type
+- type: text
+  name: path
+  label: path
+- type: boolean
+  name: draft
+  label: draft
+- type: field_group
+  name: hero
+  label: hero
+  fields:
+  - type: file
+    name: image
+    label: image
+- type: list
+  name: tags
+  label: tags

@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/animals
   label: Animal
-  match: "**/*"
 - type: directory
   path: content/animals
   label: Animals
