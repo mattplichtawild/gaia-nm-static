@@ -5,6 +5,15 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: content/posts
+  label: Post
+  match: "**/*"
+- type: directory
+  path: content/posts
+  label: Posts
+  create: documents
+  match: "**/*"
+- type: document
   path: content/animals
   label: Animal
 - type: directory
