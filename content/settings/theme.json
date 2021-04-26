@@ -16,10 +16,10 @@
     "small": "3px"
   },
   "header": {
-    "overline": false,
+    "overline": true,
     "transparent": false,
     "height": "3.25rem",
-    "underline": false
+    "underline": true
   },
   "hero": {
     "image": "../images/cafe.jpg",
