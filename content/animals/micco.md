@@ -1,13 +1,12 @@
 ---
-type: animal
 title: Micco
-dob: 2018-05-09T06:00:00Z
+type: animal
+dob: '2018-05-09T06:00:00.000Z'
 path: /animals/micco
 draft: false
 hero:
-  image: "../images/animal-brown-horse-1.jpeg"
+  image: ../images/animal-brown-horse-1.jpeg
 tags:
-- horse
-
+  - horse
 ---
 Micco is a horse blah blah blah
