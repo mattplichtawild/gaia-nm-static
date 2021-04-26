@@ -2,10 +2,10 @@
 type: animal
 title: Jericho
 dob: 
-path: "/animals/jericho"
+path: ''
 draft: false
 hero:
-  image: "/content/images/jericho1.jpg"
+  image: "../images/jericho1.jpg"
 tags: []
 
 ---
