@@ -11,6 +11,9 @@ fields:
 - type: text
   name: type
   label: type
+  default: animal
+  description: What type of page is being added (Animal or Post)
+  hidden: true
 - type: text
   name: path
   label: path
