@@ -2,7 +2,7 @@
 type: animal
 title: Micco
 dob: 2018-05-09T06:00:00Z
-path: micco
+path: /animals/micco
 draft: false
 hero:
   image: "../images/animal-brown-horse-1.jpeg"
