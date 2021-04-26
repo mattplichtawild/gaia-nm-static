@@ -17,7 +17,7 @@
   },
   "header": {
     "overline": true,
-    "transparent": true,
+    "transparent": false,
     "height": "3.25rem",
     "underline": true
   },
