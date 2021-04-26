@@ -31,6 +31,5 @@ fields:
   name: tags
   label: tags
 pages:
-- content/animals/jericho.md
 - content/animals/micco.md
 - content/animals/smooshy-g.md
