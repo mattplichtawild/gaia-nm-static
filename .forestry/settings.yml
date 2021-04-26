@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/posts
   label: Post
-  match: "**/*"
 - type: directory
   path: content/posts
   label: Posts
@@ -21,6 +20,8 @@ sections:
   label: Animals
   create: documents
   match: "**/*"
+  templates:
+  - animal-info
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
