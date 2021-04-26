@@ -6,6 +6,7 @@ path: animals/odin
 draft: false
 hero:
   image: "/uploads/animal-brown-horse.jpeg"
-tags: []
+tags:
+- horse
 
 ---
