@@ -6,8 +6,8 @@ fields:
   name: title
   label: title
 - type: datetime
-  name: date
-  label: date
+  name: dob
+  label: birthday
 - type: text
   name: type
   label: type
