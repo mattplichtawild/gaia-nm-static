@@ -5,6 +5,8 @@ fields:
 - type: text
   name: type
   label: type
+  default: post
+  hidden: true
 - type: boolean
   name: draft
   label: draft
@@ -21,3 +23,13 @@ fields:
   - type: boolean
     name: overlay
     label: overlay
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
