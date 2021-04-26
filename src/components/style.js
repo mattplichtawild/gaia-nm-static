@@ -499,6 +499,11 @@ export const Overlay = styled.div`
 
 export const Image = styled(Img)``
 
+export const Grid = styled.div`
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+`
+
 export const Paper = styled.div`
   position: relative;
   background-color: ${(props) => props.theme.color.background};
@@ -508,6 +513,7 @@ export const Paper = styled.div`
   --paper-padding-y: 2.5rem;
   --paper-padding-x: 2.5rem;
   padding: var(--paper-padding-y) var(--paper-padding-x);
+  
 
   ${(props) =>
     props.article &&
@@ -517,6 +523,15 @@ export const Paper = styled.div`
         margin-bottom: 2rem;
       }
     `};
+
+  ${(props) =>
+    props.animal &&
+    css`
+      margin: 12px;
+      &:not(:last-child) {
+        margin-bottom:2rem;
+      }
+    `}
 
   ${(props) =>
     props.center &&
@@ -537,7 +552,7 @@ export const Paper = styled.div`
   }
 
   @media (min-width: ${(props) => props.theme.breakpoints.small}) {
-    margin: 0;
+    margin: 20px;
   }
 
   @media (min-width: ${(props) => props.theme.breakpoints.large}) {

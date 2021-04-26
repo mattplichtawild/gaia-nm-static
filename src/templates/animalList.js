@@ -6,6 +6,7 @@ import { usePlugin } from "tinacms"
 import { useJsonForm } from "gatsby-tinacms-json"
 
 import {
+  Grid,
   Paper,
   Meta,
   MetaSpan,
@@ -39,10 +40,13 @@ export default function AnimalList({ data, pageContext }) {
   return (
     <PageLayout page={page}>
       <>
+      <Grid >
         {data.posts &&
           data.posts.edges.map((item) => {
             return (
-              <Paper article key={item.node.id}>
+              // add styled divs here to separate into grid?
+
+              <Paper animal key={item.node.id}>
                 {item.node.frontmatter.draft && <DraftBadge>Draft</DraftBadge>}
                 <h2>
                   <Link to={item.node.frontmatter.path}>
@@ -65,6 +69,7 @@ export default function AnimalList({ data, pageContext }) {
               </Paper>
             )
           })}
+      </Grid>
         <ListNav>
           {!isFirst && (
             <Link to={prevPage} rel="prev">
