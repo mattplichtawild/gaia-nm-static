@@ -22,7 +22,7 @@ sections:
   match: "**/*"
   templates:
   - animal-info
-upload_dir: content/images
+upload_dir: "../images"
 public_path: "/content/images"
 front_matter_path: ''
 use_front_matter_path: false
