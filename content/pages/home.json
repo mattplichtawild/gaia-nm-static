@@ -16,16 +16,16 @@
     "textline": "A sanctuary for farm animals in enchanted New Mexico",
     "ctas": [
       {
-        "label": "Read The Blog",
-        "link": "/blog",
-        "primary": true,
+        "label": "Animal Residents",
+        "link": "/animals",
+        "primary": false,
         "arrow": true
       },
       {
-        "label": "Contact Us",
-        "link": "/contact",
+        "label": "Donate",
+        "link": "/donate",
         "arrow": false,
-        "primary": false
+        "primary": true
       }
     ],
     "image": "../images/mora-valley.jpg",
