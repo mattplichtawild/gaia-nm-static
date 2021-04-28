@@ -1,6 +1,10 @@
 {
   "menuItems": [
     {
+      "label": "Donate",
+      "link": "/donate"
+    },
+    {
       "label": "Home",
       "link": "/"
     },
