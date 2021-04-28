@@ -9,7 +9,7 @@ import { Nav } from "./nav"
 import { ThemeContext } from "./theme"
 import { Link } from "gatsby"
 
-export const IconLogo = styled.img`
+export const LogoIcon = styled.img`
   height: 50px;
   width: 50px;
   margin: 12px;
@@ -25,7 +25,7 @@ export const Header = styled(({ siteTitle, ...styleProps }) => {
               <SiteLink to="/">
                 {/* <Tree /> */}
                 {/* <LogoIcon /> */}
-                <IconLogo src={Logo} />
+                <LogoIcon src={Logo} />
                 {siteTitle}
               </SiteLink>
             </SiteTitle>
