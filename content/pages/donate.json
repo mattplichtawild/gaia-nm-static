@@ -9,7 +9,7 @@
       "content": "This page will tie in to payment API to accept donations, should be able to easily do subscriptions."
     },
     {
-      "_template": "",
+      "_template": "ContentBlock",
       "content": ""
     }
   ],
