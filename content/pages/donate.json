@@ -1,41 +1,20 @@
 {
-    "title": "Donate",
-    "path": "/donate",
-    "blocks": [
-      {
-        "_template": "TitleBlock",
-        "title": "",
-        "underline": true,
-        "content": ""
-      },
-      {
-        "_template": "FormBlock",
-        "name": "Contact Form",
-        "fields": [
-          {
-            "label": "Name",
-            "inputType": "text",
-            "autocomplete": "name",
-            "_template": "nameInputBlock"
-          },
-          {
-            "label": "Email",
-            "inputType": "text",
-            "autocomplete": "email",
-            "_template": "emailInputBlock"
-          },
-          {
-            "label": "Message",
-            "inputType": "textarea",
-            "autocomplete": "",
-            "_template": "messageInputBlock"
-          }
-        ],
-        "content": ""
-      }
-    ],
-    "hero": {
-      "image": "../images/animal-brown-horse.jpg"
+  "title": "Donate",
+  "path": "/donate",
+  "blocks": [
+    {
+      "_template": "TitleBlock",
+      "title": "Donate",
+      "underline": true,
+      "content": "This page will tie in to payment API to accept donations, should be able to easily do subscriptions."
     },
-    "displayTitle": true
-  }
+    {
+      "_template": "",
+      "content": ""
+    }
+  ],
+  "hero": {
+    "image": "../images/nm-stock.jpg"
+  },
+  "displayTitle": true
+}
