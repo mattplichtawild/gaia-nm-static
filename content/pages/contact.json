@@ -34,5 +34,8 @@
       "content": ""
     }
   ],
+  "hero": {
+    "image": "../images/animal-brown-horse.jpg"
+  },
   "displayTitle": true
 }

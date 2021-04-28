@@ -2,7 +2,7 @@
   "path": "/",
   "blocks": [
     {
-      "image": "../images/[object Object]",
+      "image": "../images/mora-valley.jpg",
       "_template": "ImageBlock",
       "content": ""
     },
@@ -28,7 +28,7 @@
         "primary": false
       }
     ],
-    "image": "../images/cafe-2.jpg",
+    "image": "../images/mora-valley.jpg",
     "large": true
   },
   "displayTitle": false,

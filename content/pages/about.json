@@ -15,6 +15,7 @@
   ],
   "displayTitle": true,
   "hero": {
+    "image": "../images/taos-bridge-stock.jpg",
     "large": false
   }
 }
