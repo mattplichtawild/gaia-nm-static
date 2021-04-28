@@ -4,17 +4,27 @@
   "blocks": [
     {
       "_template": "TitleBlock",
-      "title": "Donate",
+      "title": "",
       "underline": true,
-      "content": "This page will tie in to payment API to accept donations, should be able to easily do subscriptions."
+      "content": "Content here isn't being grabbed by graphql?"
     },
     {
       "_template": "ContentBlock",
-      "content": ""
+      "content": "This page will tie in to payment API to accept donations, should be able to easily do subscriptions.",
+      "center": true,
+      "name": "donate",
+      "title": "donate",
+      "underline": true,
+      "recipient": "donate",
+      "image": "../images/coffee-beans.jpg"
+    },
+    {
+      "_template": "ContentBlock",
+      "content": "This block will contain the payment form. I'll build it so you can add donation forms to any page. \n \n Pages like campaigns for animal feed, new equipment, emergency funds, etc."
     }
   ],
   "hero": {
     "image": "../images/nm-stock.jpg"
   },
-  "displayTitle": true
+  "displayTitle": false
 }
