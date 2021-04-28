@@ -1,12 +1,19 @@
 import React from "react"
 import { Wrapper } from "./style"
-import { Tree } from '@styled-icons/bootstrap/Tree'
+// import { Tree } from '@styled-icons/bootstrap/Tree'
+import Logo from '../../content/images/icon.png'
 
 import styled, { css } from "styled-components"
 import { transparentize } from "polished"
 import { Nav } from "./nav"
 import { ThemeContext } from "./theme"
 import { Link } from "gatsby"
+
+export const IconLogo = styled.img`
+  height: 50px;
+  width: 50px;
+  margin: 12px;
+`
 
 export const Header = styled(({ siteTitle, ...styleProps }) => {
   return (
@@ -16,7 +23,9 @@ export const Header = styled(({ siteTitle, ...styleProps }) => {
           <HeaderWrapper>
             <SiteTitle>
               <SiteLink to="/">
-                <Tree />
+                {/* <Tree /> */}
+                {/* <LogoIcon /> */}
+                <IconLogo src={Logo} />
                 {siteTitle}
               </SiteLink>
             </SiteTitle>
