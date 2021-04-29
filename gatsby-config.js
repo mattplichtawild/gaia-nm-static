@@ -2,6 +2,11 @@ const theme = require("./content/settings/theme.json")
 const site = require("./content/settings/site.json")
 
 module.exports = {
+  siteMetadata: {
+    title: `Gaia Sanctuary`,
+    description: `Home and sanctuary for animals saved from the farming industry`,
+    author: `@mattplichtawild`,
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
