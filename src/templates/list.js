@@ -14,6 +14,7 @@ import { ListAuthors, AuthorsForm } from "../components/authors"
 import { TagsForm } from "../components/tags"
 import { Link } from "gatsby"
 import { PageLayout } from "../components/pageLayout"
+import Img from "gatsby-image"
 
 export default function List({ data, pageContext }) {
   const [tags] = useLocalJsonForm(data.tags, TagsForm)
@@ -35,6 +36,7 @@ export default function List({ data, pageContext }) {
           data.posts.edges.map((item) => {
             return (
               <Paper article key={item.node.id}>
+                <Img fluid={item.node.frontmatter.hero && item.node.frontmatter.hero.image.childImageSharp.fluid} alt="" />
                 {item.node.frontmatter.draft && <DraftBadge>Draft</DraftBadge>}
                 <h2>
                   <Link to={item.node.frontmatter.path}>
@@ -122,6 +124,15 @@ export const pageQuery = graphql`
             draft
             authors
             tags
+            hero {
+              image {
+                childImageSharp {
+                  fluid(quality: 70, maxHeight: 400) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+            }
           }
         }
       }
