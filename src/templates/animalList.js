@@ -2,8 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import { useLocalJsonForm } from "gatsby-tinacms-json"
-import { usePlugin } from "tinacms"
-import { useJsonForm } from "gatsby-tinacms-json"
+// import { usePlugin } from "tinacms"
+// import { useJsonForm } from "gatsby-tinacms-json"
+import Img from "gatsby-image"
 
 import {
   Grid,
@@ -36,7 +37,7 @@ export default function AnimalList({ data, pageContext }) {
     currentPage - 1 === 1 ? slug : slug + "/" + (currentPage - 1).toString()
   const nextPage = slug + "/" + (currentPage + 1).toString()
   page.title = isFirst ? page.title : page.title + " - " + currentPage
-
+ 
   return (
     <PageLayout page={page}>
       <>
@@ -44,16 +45,15 @@ export default function AnimalList({ data, pageContext }) {
         {data.posts &&
           data.posts.edges.map((item) => {
             return (
-              // add styled divs here to separate into grid?
-
               <Paper animal key={item.node.id}>
+                <Img fluid={item.node.frontmatter.hero && item.node.frontmatter.hero.image.childImageSharp.fluid} alt="" />
                 {item.node.frontmatter.draft && <DraftBadge>Draft</DraftBadge>}
                 <h2>
                   <Link to={item.node.frontmatter.path}>
                     {item.node.frontmatter.title}
                   </Link>
                 </h2>
-                <p>{item.node.excerpt}</p>
+                {/* <p>{item.node.frontmatter.dob}</p> */}
                 <Meta>
                   {/* <MetaSpan>{item.node.frontmatter.date}</MetaSpan> */}
                   {/* {item.node.frontmatter.authors && (
@@ -133,8 +133,17 @@ export const pageQuery = graphql`
             path
             title
             draft
-            authors
             tags
+            dob
+            hero {
+              image {
+                childImageSharp {
+                  fluid(quality: 70, maxWidth: 800) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+            }
           }
         }
       }

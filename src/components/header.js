@@ -1,6 +1,5 @@
 import React from "react"
 import { Wrapper } from "./style"
-// import { Tree } from '@styled-icons/bootstrap/Tree'
 import Logo from '../../content/images/icon.png'
 
 import styled, { css } from "styled-components"
@@ -23,8 +22,6 @@ export const Header = styled(({ siteTitle, ...styleProps }) => {
           <HeaderWrapper>
             <SiteTitle>
               <SiteLink to="/">
-                {/* <Tree /> */}
-                {/* <LogoIcon /> */}
                 <LogoIcon src={Logo} />
                 {siteTitle}
               </SiteLink>

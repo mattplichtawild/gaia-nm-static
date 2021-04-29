@@ -528,9 +528,9 @@ export const Paper = styled.div`
     props.animal &&
     css`
       margin: 12px;
-      &:not(:last-child) {
-        margin-bottom:2rem;
-      }
+      // &:not(:last-child) {
+      //   margin-bottom:2rem;
+      // }
     `}
 
   ${(props) =>
