@@ -500,10 +500,10 @@ export const Overlay = styled.div`
 export const Image = styled(Img)``
 
 export const Grid = styled.div`
-@media (min-width: ${(props) => props.theme.breakpoints.small}) {
+// @media (min-width: ${(props) => props.theme.breakpoints.small}) {
   display: inline-grid;
   grid-template-columns: 50% 50%;
-}
+// }
 `
 
 export const Paper = styled.div`
