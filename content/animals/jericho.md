@@ -1,7 +1,7 @@
 ---
 title: Jericho
 type: animal
-dob: null
+dob: '1993-04-03'
 path: /animals/jericho
 draft: false
 hero:
