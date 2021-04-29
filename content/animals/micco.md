@@ -9,4 +9,4 @@ hero:
 tags:
   - horse
 ---
-Micco is a horse blah blah blah
+Micco is a horse neigh
