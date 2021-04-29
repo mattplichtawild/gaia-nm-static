@@ -500,8 +500,10 @@ export const Overlay = styled.div`
 export const Image = styled(Img)``
 
 export const Grid = styled.div`
+@media (min-width: ${(props) => props.theme.breakpoints.small}) {
   display: inline-grid;
   grid-template-columns: 50% 50%;
+}
 `
 
 export const Paper = styled.div`
@@ -510,8 +512,8 @@ export const Paper = styled.div`
   box-shadow: 0 0.5rem 1rem -0.5rem ${(props) => transparentize(0.9, props.theme.color.black)};
   border-radius: ${(props) => props.theme.radius.small};
 
-  --paper-padding-y: 2.5rem;
-  --paper-padding-x: 2.5rem;
+  --paper-padding-y: .75rem;
+  --paper-padding-x: .75rem;
   padding: var(--paper-padding-y) var(--paper-padding-x);
   
 
@@ -527,7 +529,7 @@ export const Paper = styled.div`
   ${(props) =>
     props.animal &&
     css`
-      margin: 12px;
+      margin: 1rem;
       // &:not(:last-child) {
       //   margin-bottom:2rem;
       // }
@@ -556,8 +558,8 @@ export const Paper = styled.div`
   }
 
   @media (min-width: ${(props) => props.theme.breakpoints.large}) {
-    --paper-padding-y: 3.5rem;
-    --paper-padding-x: 4rem;
+    // --paper-padding-y: 3.5rem;
+    // --paper-padding-x: 4rem;
   }
 
   pre[class*="language-"] {

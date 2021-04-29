@@ -138,7 +138,7 @@ export const pageQuery = graphql`
             hero {
               image {
                 childImageSharp {
-                  fluid(quality: 70, maxWidth: 800) {
+                  fluid(quality: 70, maxWidth: 300, maxHeight: 300) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
