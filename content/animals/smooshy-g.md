@@ -3,7 +3,7 @@ title: Smooshy G
 type: animal
 dob: null
 path: /animals/g
-draft: true
+draft: false
 hero:
   image: ../images/bighorn-ram-4163.jpg
 tags: []
