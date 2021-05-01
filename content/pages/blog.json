@@ -4,8 +4,8 @@
   "pageType": "list",
   "listType": "post",
   "hero": {
-    "image": "../images/[object Object]",
-    "large": true,
+    "image": "../images/mora-valley.jpg",
+    "large": false,
     "overlay": true
   }
 }
