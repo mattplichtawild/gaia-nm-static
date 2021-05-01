@@ -46,13 +46,13 @@ export default function AnimalList({ data, pageContext }) {
           data.posts.edges.map((item) => {
             return (
               <Paper animal key={item.node.id}>
-                <Img fluid={item.node.frontmatter.hero && item.node.frontmatter.hero.image.childImageSharp.fluid} alt="" />
+                <Link to={item.node.frontmatter.path}>
+                  <Img fluid={item.node.frontmatter.hero && item.node.frontmatter.hero.image.childImageSharp.fluid} alt="" />
+                  <h2>
+                      {item.node.frontmatter.title}
+                  </h2>
+                </Link>
                 {item.node.frontmatter.draft && <DraftBadge>Draft</DraftBadge>}
-                <h2>
-                  <Link to={item.node.frontmatter.path}>
-                    {item.node.frontmatter.title}
-                  </Link>
-                </h2>
                 {/* <p>{item.node.frontmatter.dob}</p> */}
                 <Meta>
                   {/* <MetaSpan>{item.node.frontmatter.date}</MetaSpan> */}
