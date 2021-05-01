@@ -11,4 +11,4 @@ I see ways our journeys can intertwine, each of us growing from it. You have qui
 
 I made this because it helps you help the animals you are saving, and it does help my foray into webdev and software. The motivation was all you, I want to be part of your story.
 
-I want to see how our connection grows :)
+I want to see our connection grow :)
