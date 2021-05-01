@@ -3,6 +3,11 @@
   "path": "/about",
   "blocks": [
     {
+      "image": "../images/",
+      "_template": "ImageBlock",
+      "content": ""
+    },
+    {
       "_template": "TitleBlock",
       "title": "The Vision",
       "underline": true,
