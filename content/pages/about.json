@@ -3,6 +3,11 @@
   "path": "/about",
   "blocks": [
     {
+      "content": "> You can tell whatever story you want to tell. ",
+      "center": true,
+      "_template": "ContentBlock"
+    },
+    {
       "_template": "TitleBlock",
       "title": "The Vision",
       "underline": true,
