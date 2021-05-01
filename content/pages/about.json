@@ -3,6 +3,11 @@
   "path": "/about",
   "blocks": [
     {
+      "content": "\n###### EARTHLING || LOVER || FOUNDER || MAMA",
+      "center": true,
+      "_template": "ContentBlock"
+    },
+    {
       "_template": "TitleBlock",
       "title": "The Vision",
       "underline": true,
