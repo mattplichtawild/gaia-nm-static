@@ -22,8 +22,8 @@
     "underline": false
   },
   "hero": {
-    "image": "../images/cafe.jpg",
-    "large": false,
+    "image": "../images/nm-stock.jpg",
+    "large": true,
     "overlay": true,
     "overlap": "8rem",
     "parallax": true
