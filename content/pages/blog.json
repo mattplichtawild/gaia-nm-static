@@ -4,7 +4,7 @@
   "pageType": "list",
   "listType": "post",
   "hero": {
-    "image": "../images/",
+    "image": "../images/[object Object]",
     "large": true,
     "overlay": true
   }
