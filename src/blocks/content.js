@@ -14,6 +14,7 @@ export function Content({ data, html }) {
 }
 
 const StyledContent = styled.div`
+  margin-bottom: 1.25rem;
   ${props =>
     props.center &&
     css`

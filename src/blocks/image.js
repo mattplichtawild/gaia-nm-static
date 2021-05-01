@@ -16,6 +16,7 @@ export function Image({ data }) {
 
 const ImageWrapper = styled.div`
   overflow: hidden;
+  padding: 1.25rem;
 `
 
 export const ImageBlock = {
