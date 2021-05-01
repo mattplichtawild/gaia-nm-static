@@ -8,6 +8,7 @@ import Helmet from "react-helmet"
 import slugify from "react-slugify"
 
 import { createRemarkButton } from "gatsby-tinacms-remark"
+import { RemarkCreatorPlugin } from "gatsby-tinacms-remark"
 import { JsonCreatorPlugin } from "gatsby-tinacms-json"
 import { withPlugin } from "tinacms"
 
@@ -37,6 +38,36 @@ const MasterLayout = ({ children }) => {
     </>
   )
 }
+
+// This copied from CreatePostButton, need to write with updated method
+// Should probably upgrade TinaCMS first which doesn't play nice with other dependencies somehow...
+const CreateAnimalButton = createRemarkButton({
+  label: "New Animal",
+  filename(form) {
+    let slug = slugify(form.title.toLowerCase())
+    return `content/animals/${slug}.md`
+  },
+  frontmatter(form) {
+    let slug = slugify(form.title.toLowerCase())
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve({
+          title: form.title,
+          date: new Date(),
+          type: "animal",
+          path: `/blog/${slug}`,
+          draft: true,
+        })
+      }, 1000)
+    })
+  },
+  body({ title }) {
+    return `## ${title}`
+  },
+  fields: [
+    { name: "title", label: "Name", component: "text", required: true },
+  ],
+})
 
 const CreatePostButton = createRemarkButton({
   label: "New Post",
@@ -84,7 +115,7 @@ const CreatePageButton = new JsonCreatorPlugin({
   },
 })
 
-export default withPlugin(MasterLayout, [CreatePostButton, CreatePageButton])
+export default withPlugin(MasterLayout, [CreatePostButton, CreatePageButton, CreateAnimalButton])
 
 export const Site = styled.div`
   position: relative;
