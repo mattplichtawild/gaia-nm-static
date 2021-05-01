@@ -3,7 +3,7 @@ title: I made this for you
 date: '2021-04-29T03:46:03.835Z'
 type: post
 path: /blog/i-made-this-for-you
-draft: false
+draft: true
 ---
 When you asked if I could help, I had already been thinking of ways I could support you. We had the same vision, at least for this one way I could help. I wonder what other visions we share.
 
