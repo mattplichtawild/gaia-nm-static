@@ -2,7 +2,7 @@
   "path": "/",
   "blocks": [
     {
-      "content": "# This is your landing page\n\nYou can add pictures and talk about your vision and what you do.\n\nI want to build an Instagram feed that displays recent pictures at the bottom of this page.",
+      "content": "> We are merely reflections of one another.\n\nYou can add pictures and talk about your vision and what you do.\n\nI want to build an Instagram feed that displays recent pictures at the bottom of this page.",
       "center": false,
       "_template": "ContentBlock"
     },
