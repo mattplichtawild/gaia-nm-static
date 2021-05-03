@@ -36,13 +36,14 @@ export default function List({ data, pageContext }) {
           data.posts.edges.map((item) => {
             return (
               <Paper article key={item.node.id}>
-                <Img fluid={item.node.frontmatter.hero && item.node.frontmatter.hero.image.childImageSharp.fluid} alt="" />
                 {item.node.frontmatter.draft && <DraftBadge>Draft</DraftBadge>}
-                <h2>
                   <Link to={item.node.frontmatter.path}>
-                    {item.node.frontmatter.title}
+                    <Img fluid={item.node.frontmatter.hero && item.node.frontmatter.hero.image.childImageSharp.fluid} alt="" />
+                    <h2>
+                      {item.node.frontmatter.title}
+                    </h2>
                   </Link>
-                </h2>
+                  {item.node.frontmatter.draft && <DraftBadge>Draft</DraftBadge>}
                 <p>{item.node.excerpt}</p>
                 <Meta>
                   <MetaSpan>{item.node.frontmatter.date}</MetaSpan>
