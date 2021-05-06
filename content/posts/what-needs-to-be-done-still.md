@@ -3,7 +3,7 @@ title: What needs to be done still
 date: '2021-05-01T07:28:07.717Z'
 type: post
 path: /blog/what-needs-to-be-done-still
-draft: true
+draft: false
 ---
 I have several things I want to add or change. First is to get donations set up, the payment processor I'll use will have the ability to do subscriptions. I also need to change the way pictures are displayed on animal pages.
 
