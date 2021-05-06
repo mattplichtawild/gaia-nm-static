@@ -7,7 +7,7 @@ export const Footer = styled(({ ...styleProps }) => {
   return (
     <footer {...styleProps}>
       <Wrapper>
-        © {new Date().getFullYear()} GAIA SANCTUARY NM – Built by
+        © {new Date().getFullYear()} GAIA ANIMAL SANCTUARY – Built by
         {` `}
         <a href="mailto:mattplichtawild@gmail.com">Matt Plichta</a> 
       </Wrapper>
