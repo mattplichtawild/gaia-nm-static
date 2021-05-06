@@ -9,7 +9,7 @@ export const Footer = styled(({ ...styleProps }) => {
       <Wrapper>
         © {new Date().getFullYear()} GAIA ANIMAL SANCTUARY – Built by
         {` `}
-        <a href="mailto:mattplichtawild@gmail.com">Matt Plichta</a> 
+        <a href="https://www.github.com/mattplichtawild">Matt Plichta</a> 
       </Wrapper>
     </footer>
   )
