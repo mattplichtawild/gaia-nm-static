@@ -73,7 +73,7 @@ const CreateAnimalButton = createRemarkButton({
           title: form.title,
           date: new Date(),
           type: "animal",
-          path: `/blog/${slug}`,
+          path: `/animals/${slug}`,
           draft: true,
         })
       }, 1000)
