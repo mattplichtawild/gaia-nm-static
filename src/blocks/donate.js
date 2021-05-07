@@ -9,7 +9,7 @@ import {loadStripe} from '@stripe/stripe-js';
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx'
 );
 
-export function  DonateForm({ }) {
+export function DonateForm({ }) {
   return (
     <Elements stripe={stripePromise}>
       <MyCheckoutForm />
