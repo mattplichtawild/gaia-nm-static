@@ -1,0 +1,76 @@
+---
+label: Page
+hide_body: true
+fields:
+- type: text
+  name: path
+  label: URL
+  description: The URL that appears after the website name (eg. gaiasanctuarynm.org/contact)
+- type: field_group_list
+  name: blocks
+  label: blocks
+  fields:
+  - type: textarea
+    name: content
+    label: content
+    description: The content of the block. Write your stuff here :)
+  - type: boolean
+    name: center
+    label: center
+  - type: text
+    name: _template
+    label: _template
+    default: ContentBlock
+    config:
+      required: true
+    hidden: false
+    description: Which template to use (ContentBlock or ImageBlock). Defaults to ContentBlock.
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+    description: Optional. Change "_template" if inserting image.
+- type: field_group
+  name: hero
+  label: hero
+  fields:
+  - type: text
+    name: headline
+    label: headline
+  - type: text
+    name: textline
+    label: textline
+  - type: field_group_list
+    name: ctas
+    label: ctas
+    fields:
+    - type: text
+      name: label
+      label: label
+    - type: text
+      name: link
+      label: link
+    - type: boolean
+      name: primary
+      label: primary
+    - type: boolean
+      name: arrow
+      label: arrow
+    description: '"Call to Action": A button or link that you want visitors to click
+      on.'
+  - type: file
+    name: image
+    label: image
+    description: Hero Image
+  - type: boolean
+    name: large
+    label: large
+  description: Large image section at the top of the page. Can include heading and
+    subheading.
+- type: boolean
+  name: displayTitle
+  label: displayTitle
+- type: text
+  name: title
+  label: title
