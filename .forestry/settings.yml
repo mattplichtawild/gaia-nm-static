@@ -31,6 +31,14 @@ sections:
   match: "**/*"
   templates:
   - animal-info
+type: blocks
+name: blocks
+label: Blocks
+template_types:
+- title-block
+- content-block
+- image-block
+- form-block
 upload_dir: content/images
 public_path: "../images"
 front_matter_path: ''
