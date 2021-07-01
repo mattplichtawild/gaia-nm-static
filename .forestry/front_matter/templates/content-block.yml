@@ -1,4 +1,24 @@
 ---
 label: Content Block
 hide_body: true
-fields: []
+fields:
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+  description: Text
+- name: center
+  type: boolean
+  label: Center
+- name: _template
+  type: text
+  config:
+    required: true
+  label: Template
+  hidden: true
+  default: ContentBlock
