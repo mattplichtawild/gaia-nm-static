@@ -1,4 +1,28 @@
 ---
 label: Title Block
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: _template
+  type: text
+  config:
+    required: false
+  label: Template
+  hidden: true
+  default: TitleBlock
+- name: center
+  type: boolean
+  label: Center
+- name: underline
+  type: boolean
+  label: Underline
+- name: content
+  type: text
+  config:
+    required: false
+  label: Content
+  hidden: true
