@@ -7,8 +7,8 @@ fields:
   label: URL
   description: The URL that appears after the website name (eg. gaiasanctuarynm.org/contact)
 - type: field_group_list
-  name: blocks
-  label: blocks
+  name: block
+  label: blocks old
   fields:
   - type: textarea
     name: content
@@ -74,3 +74,10 @@ fields:
 - type: text
   name: title
   label: title
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types: []
+  config:
+    min: 
+    max: 
