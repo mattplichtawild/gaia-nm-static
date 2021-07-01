@@ -6,31 +6,17 @@ fields:
   name: path
   label: URL
   description: The URL that appears after the website name (eg. gaiasanctuarynm.org/contact)
-- type: field_group_list
-  name: block
-  label: blocks old
-  fields:
-  - type: textarea
-    name: content
-    label: content
-    description: The content of the block. Write your stuff here :)
-  - type: boolean
-    name: center
-    label: center
-  - type: text
-    name: _template
-    label: _template
-    default: ContentBlock
-    config:
-      required: true
-    hidden: false
-    description: Which template to use (ContentBlock or ImageBlock). Defaults to ContentBlock.
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-    description: Optional. Change "_template" if inserting image.
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - title-block
+  - content-block
+  - image-block
+  - form-block
+  config:
+    min: 
+    max: 
 - type: field_group
   name: hero
   label: hero
@@ -74,10 +60,3 @@ fields:
 - type: text
   name: title
   label: title
-- name: blocks
-  type: blocks
-  label: Blocks
-  template_types: []
-  config:
-    min: 
-    max: 
