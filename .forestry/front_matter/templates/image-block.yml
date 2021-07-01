@@ -1,4 +1,22 @@
 ---
 label: Image Block
 hide_body: true
-fields: []
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: content
+  type: text
+  config:
+    required: false
+  label: Content
+  description: Alternate text for the image (used by screen readers for accessibility)
+- name: _template
+  type: text
+  config:
+    required: false
+  label: Template
+  hidden: true
+  default: ImageBlock
