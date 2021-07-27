@@ -11,7 +11,7 @@ fields:
   label: title
 - type: boolean
   name: displayTitle
-  label: displayTitle
+  label: Display Title?
 - type: field_group
   name: hero
   label: hero
