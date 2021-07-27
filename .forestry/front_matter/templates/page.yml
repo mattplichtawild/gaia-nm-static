@@ -12,6 +12,7 @@ fields:
 - type: boolean
   name: displayTitle
   label: Display Title?
+  description: 'Toggle on/off '
 - type: field_group
   name: hero
   label: hero
