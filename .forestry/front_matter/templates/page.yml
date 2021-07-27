@@ -6,17 +6,12 @@ fields:
   name: path
   label: URL
   description: The URL that appears after the website name (eg. gaiasanctuarynm.org/contact)
-- name: blocks
-  type: blocks
-  label: Blocks
-  template_types:
-  - title-block
-  - content-block
-  - image-block
-  - form-block
-  config:
-    min: 
-    max: 
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: displayTitle
+  label: displayTitle
 - type: field_group
   name: hero
   label: hero
@@ -54,9 +49,14 @@ fields:
     label: large
   description: Large image section at the top of the page. Can include heading and
     subheading.
-- type: boolean
-  name: displayTitle
-  label: displayTitle
-- type: text
-  name: title
-  label: title
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - title-block
+  - content-block
+  - image-block
+  - form-block
+  config:
+    min: 
+    max: 
