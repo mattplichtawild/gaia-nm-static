@@ -22,6 +22,14 @@
       "_template": "ContentBlock",
       "content": "This page was created to test Forestry.io. I'm able to add blocks here when creating a new page, but can't edit the blocks on existing pages. We'll see what this looks like.",
       "center": false
+    },
+    {
+      "template": "title-block",
+      "_template": "TitleBlock",
+      "title": "This is a test.",
+      "center": true,
+      "underline": true,
+      "content": ""
     }
   ]
 }
