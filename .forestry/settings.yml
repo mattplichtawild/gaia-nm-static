@@ -9,9 +9,7 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-  new_doc_ext: json
-  templates:
-  - page
+  new_doc_ext: ".json"
 - type: document
   path: content/pages
   label: Page
