@@ -7,9 +7,9 @@ sections:
 - type: directory
   path: content/pages
   label: Pages
-  create: documents
+  create: all
   match: "**/*"
-  new_doc_ext: json
+  new_doc_ext: ".json"
   templates:
   - page
 - type: document
