@@ -1,0 +1,22 @@
+{
+  "path": "/test",
+  "title": "Test Page",
+  "displayTitle": true,
+  "hero": {
+    "headline": "TEST",
+    "textline": "This page is a test.",
+    "ctas": [
+      {
+        "link": "/",
+        "primary": true,
+        "arrow": true,
+        "label": "Go Home"
+      }
+    ],
+    "image": "",
+    "large": false
+  },
+  "blocks": [
+
+  ]
+}
