@@ -36,10 +36,20 @@
       "name": "Test Form",
       "fields": [
         {
+          "label": "",
+          "inputType": ""
+        },
+        {
           "label": "Name",
           "inputType": "text"
         }
       ]
+    },
+    {
+      "template": "image-block",
+      "_template": "ImageBlock",
+      "image": "../images/pig-stock.jpg",
+      "content": ""
     }
   ]
 }
