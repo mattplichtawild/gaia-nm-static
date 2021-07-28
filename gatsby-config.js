@@ -17,7 +17,7 @@ module.exports = {
       options: {
         // Instagram user ID to get posts from
         username: "19479991287"
-      }
+      },
     },
     {
       resolve: "gatsby-plugin-tinacms",
