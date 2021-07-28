@@ -35,12 +35,6 @@
         "link": "/animals",
         "primary": false,
         "arrow": true
-      },
-      {
-        "label": "Donate",
-        "link": "/donate",
-        "arrow": false,
-        "primary": true
       }
     ],
     "image": "../images/nm-stock.jpg",
