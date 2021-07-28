@@ -13,6 +13,13 @@ module.exports = {
     `gatsby-tinacms-json`,
     `gatsby-transformer-json`,
     {
+      resolve: "gatsby-source-instagram",
+      options: {
+        // Instagram user ID to get posts from
+        username: "19479991287"
+      }
+    },
+    {
       resolve: "gatsby-plugin-tinacms",
       options: {
         enabled: process.env.NODE_ENV !== "production",
