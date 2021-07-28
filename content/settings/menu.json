@@ -15,10 +15,6 @@
     {
       "label": "Journal",
       "link": "/blog"
-    },
-    {
-      "label": "Donate",
-      "link": "/donate"
     }
   ]
 }
