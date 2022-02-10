@@ -44,7 +44,8 @@
       }
     ],
     "image": "../images/nm-stock.jpg",
-    "large": true
+    "large": true,
+    "overlay": false
   },
   "displayTitle": false,
   "title": "Home"
