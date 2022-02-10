@@ -27,7 +27,7 @@
     }
   ],
   "hero": {
-    "headline": "GAIA ANIMAL SANCTUARY",
+    "headline": "GAIA SANCTUARY",
     "textline": "A sanctuary for kindred souls in enchanted New Mexico",
     "ctas": [
       {
@@ -35,6 +35,12 @@
         "link": "/animals",
         "primary": false,
         "arrow": true
+      },
+      {
+        "label": "Donate",
+        "link": "/donate",
+        "arrow": false,
+        "primary": true
       }
     ],
     "image": "../images/nm-stock.jpg",
